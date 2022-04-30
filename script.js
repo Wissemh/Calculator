@@ -1,12 +1,18 @@
+// Calculation Program
 var resultField =document.getElementById("result");
 var num = "";
 var firstNum = "";
 var op ; 
 var result ; 
+var theme=1;
+
 document.getElementById("RESET-button").addEventListener("click",handleReset);
 function handleReset() {
     resultField.value = "";
     num="";
+    firstNum = "";
+    op = "";
+    result="";
 }
 document.getElementById("DEL-button").addEventListener("click",handleDel);
 function handleDel () {
@@ -41,20 +47,28 @@ function calculation () {
     switch (op) 
     {
         case '+':
-        result = parseFloat(firstNum) + parseFloat(num);
+        result = (parseFloat(firstNum) + parseFloat(num)).toString();
             break
         case '-':
-            result = parseFloat(firstNum) - parseFloat(num);
+            result =(parseFloat(firstNum) - parseFloat(num)).toString();
             break
         case '*':
-        result = parseFloat(firstNum) * parseFloat(num);
+        result = (parseFloat(firstNum) * parseFloat(num)).toString();
             break
         case '÷':
-        result = parseFloat(firstNum) / parseFloat(num);
+        result =(parseFloat(firstNum) / parseFloat(num)).toString();
             break
         default:
           return
     }
-    console.log(result);
-        
+    num = result ;
+    if(num) {resultField.value = num;}      
+}
+// Theme Switcher Program
+document.getElementById("switcher-id").addEventListener("click",swithTheme);
+function swithTheme() {
+    console.log("clicked");
+  /*  theme++;
+    if (theme == 4 ) {theme = 1;}
+    console.log(theme);*/
 }

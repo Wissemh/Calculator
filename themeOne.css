@@ -1,0 +1,48 @@
+body{
+    background-color: hsl(222, 26%, 31%);
+}
+h1 {
+    color: white;
+}
+section {
+    background-color: hsl(223, 31%, 20%);
+}
+input {
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+}
+
+.number,.operator  {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 3px hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%);
+} 
+
+.DEL-RESET {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%); 
+    color: white;
+}
+
+
+.equal {
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+   box-shadow: 0px 3px hsl(6, 70%, 34%); 
+}
+
+footer {
+    color: white; 
+}
+footer a { 
+    color: hsl(225, 21%, 49%);
+} 
+.button-container {
+    color: white;
+}
+.cercle-container {
+    background-color: hsl(223, 31%, 20%);
+}
+.cercle {
+    border-color: hsl(6, 63%, 50%);
+}

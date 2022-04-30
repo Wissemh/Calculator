@@ -10,55 +10,32 @@ body {
     align-items: center;
     overflow: hidden;
 }
-.body-theme1{
-    background-color: hsl(222, 26%, 31%);
-}
-.body-theme2{
-    background-color: hsl(0, 0%, 90%);
-}
-.body-theme3{
-    background-color: hsl(268, 75%, 9%);
-}
+
 main {
     display: flex;
-    width: 400px;
-    height: 400px;
+    width: 27%;
+    height: 80vh;
     flex-direction: column;
     justify-content: space-around;
 }
-.h1-theme1 {
-    color: white;
-}
-.h1-theme2 {
-    color: hsl(60, 10%, 19%);
-}
-.h1-theme3 {
-    color: hsl(52, 100%, 62%);
+@media (max-width: 570px) {
+    main {
+        width: 70%;
+    }
 }
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 input {
     all: unset;
     width: 100%;
-    height: 17%;
+    height: 15%;
     border-radius: 5px;
     Font-size: 40px;
 
-}
-.input-theme1 {
-    background-color: hsl(224, 36%, 15%);
-    color: white;
-}
-.input-theme2 {
-    background-color: hsl(0, 5%, 81%);
-    color: hsl(60, 10%, 19%);
-}
-.input-theme3 {
-    background-color:  hsl(268, 71%, 12%)    ;
-    color: hsl(52, 100%, 62%);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -71,7 +48,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 section {
-    background-color: hsl(223, 31%, 20%);
     display: grid;
     height: 60%;
     gap: 4%;
@@ -84,80 +60,52 @@ section > button {
     all: unset;
     text-align: center;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 32px;
     border-radius: 5px;
     cursor: pointer;
 }
-.button-theme1  {
-    background-color: hsl(30, 25%, 89%);
-    box-shadow: 0px 3px hsl(28, 16%, 65%);
-    color: hsl(221, 14%, 31%);
-} 
-.button-theme2 {
-   background-color:  hsl(45, 7%, 89%);
-    box-shadow: 0px 3px hsl(185, 58%, 25%);
-    color: hsl(221, 14%, 31%);
-}
-.button-theme3 {
-    background-color:  hsl(268, 47%, 21%);
-    box-shadow: 0px 3px hsl(290, 70%, 36%);
-    color: hsl(52, 100%, 62%);
- }
 #RESET-button {
     grid-column-start: 1;
     grid-column-end:3;
 
 }
-.DEL-RESET-Theme1 {
-    background-color: hsl(225, 21%, 49%);
-    box-shadow: 0px 3px hsl(224, 28%, 35%); 
-    color: white;
-}
-.DEL-RESET-Theme2 {
-    background-color: hsl(185, 42%, 37%);
-    box-shadow: 0px 3px hsl(185, 42%, 37%); 
-    color: white;
-}
-.DEL-RESET-Theme3 {
-    background-color: hsl(281, 89%, 26%);
-    box-shadow: 0px 3px hsl(285, 91%, 52%); 
-    color: white;
-}
 #equal-button {
     grid-column-start: 3;
     grid-column-end: span 2;
 }
-.equal-Theme1 {
-    background-color: hsl(6, 63%, 50%);
-    color: white;
-   box-shadow: 0px 3px hsl(6, 70%, 34%); 
-}
-.footer {
+footer {
     font-size: 11px; 
     text-align: center; 
 }
-.footer a { 
+footer a { 
     all: unset; 
     cursor: pointer;
 } 
-.footer-theme1 {
-    color: white; 
+.second-container {
+    display: flex;
+    width: 344%;
+    float: right;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
-.footer-theme1 a { 
-    color: hsl(225, 21%, 49%);
-
-} 
-.footer-theme2 {
-    color: hsl(185, 42%, 37%);
+.cercle-container {
+    display: flex;
+    width: 30%;
+    height: 15px;
+    border-radius: 15px;
+    padding: 2%;
 }
-.footer-theme2 a { 
-    color: white;
-} 
-
-.footer-theme3 {
-    color: hsl(281, 89%, 26%); 
+.cercle {
+    height: 100%;
+    width: 20%;
+    border: 5px solid black;
+    border-radius: 50%;
 }
-.footer-theme3 a { 
-    color: white;
-} 
-
+span {
+    font-size: 14px;
+    margin-right: 10%;
+}
+.numbers {
+    display: flex;
+    justify-content: space-between;
+}
