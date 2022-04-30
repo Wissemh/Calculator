@@ -94,6 +94,7 @@ footer a {
     height: 15px;
     border-radius: 15px;
     padding: 2%;
+    cursor: pointer;
 }
 .cercle {
     height: 100%;

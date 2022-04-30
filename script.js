@@ -65,10 +65,18 @@ function calculation () {
     if(num) {resultField.value = num;}      
 }
 // Theme Switcher Program
-document.getElementById("switcher-id").addEventListener("click",swithTheme);
+document.getElementById("theme-switcher").addEventListener("click",swithTheme);
 function swithTheme() {
-    console.log("clicked");
-  /*  theme++;
+   theme++;
     if (theme == 4 ) {theme = 1;}
-    console.log(theme);*/
+    setTheme(theme);
+}
+function setTheme(theme) {
+    if (theme == 1) {
+      document.getElementById('switcher-id').href = 'themeOne.css';
+    } else if (theme == 2) {
+      document.getElementById('switcher-id').href = 'themeTwo.css';
+    } else if (theme == 3) {
+      document.getElementById('switcher-id').href = 'themeThree.css';
+    }
 }
